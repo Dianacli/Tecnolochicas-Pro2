@@ -1,0 +1,145 @@
+/*Agreagar estilos al cuerpo*/
+body{
+    background-color: gainsboro; 
+    color: #efb810;
+}
+p{
+    color:black;
+}
+/*Selectores de clase: inician con un punto(.)*/
+.lista-de-gatos{
+    color:brown;
+}
+/*Selectores css. Selectores de Tipo.Tamaño de fuente*/
+h2{
+    font-size: 30px;
+    /*Ejemplo de Familias Tipograficas*/
+    font-family: Verdana;
+}
+/*Tamaño de fuente*/
+h3{
+    font-size: 25PX;
+}
+/*Ejemplo de Google Font*/
+h1{
+    font-family: 'Roboto',sans-serif;
+}
+/*TAMAÑO DE FUENTE*/
+/*Ejemplo de aplicar el mismo estilo a diferentes elementos*/
+p,
+ul,
+ol{
+    font-size: 20px;
+}
+/*Elemplo de aplicar mas de una propiedad a un elemento*/
+/*li(
+    color:blue;
+    font-size:15px;
+)*/
+/*
+img{
+    <!--propiedad with=ancho-->
+    width: 200px;
+}
+*/
+/*Ejemplo de aplicar propiedades a diferentes img. creamos la clase imagen-de-gatos y le modificamos el ancho=width*/
+.imagen-de-gatos{
+    width: 200px;
+    /*Añade bordes alrededor de un ejemplo, en este caso, una imagen*/
+    border-width: 15px;
+    border-color: #efb810;
+
+    /*Existen estilos como nome, double, grove, ridge,inst, outset*/
+    /*borde-style:solid*/
+
+    /*Podemos combiunar estilos de borde*/
+    border-style: dotted ridge double groove;
+}
+
+/*Hacer esquinas redondeadas*/
+/*
+.bordes-redondeados{
+    borde-radius:50px;
+}*/
+
+/*Hacer imagenes redondeadas*/
+.borde-redondeados{
+    border-radius:10%;
+}
+
+/*Color de fondo de un div*/
+div{
+    background-color: bisque;
+}
+/*Atributo id en css. Se usa un '#'.*/
+#titulo-app-gatos{
+    font-size: 30px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*Ejemplo de uso de id en imagenes*/
+#imagen-de-lasagna{
+    width: 300px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #efb810;
+}
+#lista-gatos-aman{
+    font-size: 18px;
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*PADDING:DISTANCIA ENTRE EL BORDE Y EL CONTENIDO HTML, EN ESTE CASO, ES LA IMAGEN*/
+#imagen-con-padding{
+    width: 300px;
+    /*padding:20px*/
+    background-color: #efb810;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    
+    
+    /*PADDING A CADA LADO*/
+    /*padding-top:30px;
+    padding-right: 25px ;
+    padding-bottom: 40px;
+    padding-left: 50px;*/
+
+    /*PADDING A UNA LINEA. SE ACOMODAN EN EL SENTIDO DE LAS AGUJAS DEL RELOJ*/
+    padding: 30px 25px 40px 50px;
+
+    /*Margin: separar un elemento de otro elemento. seoparamos una imagen de la otra (margin:20px)*/
+
+    /*AGUSTA EL MARGIN EN UNA SOLO LINEA*/
+    margin: 20px 15px 10px 5px;
+    box-shadow: inset 5px 5px black;
+}
+/*SELECTOR DE ATRIBUTOS*/
+img[alt]{
+    border-radius: 50%;
+}
+[type="radio"]{
+    margin: 10px;
+}
+a[herf="https://tecnolochicas.mx/"]{
+    color: #efb810;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn{
+    margin: 5px;
+    padding: 10px 20px;
+  background-color: black;
+  color: #efb810;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover{
+    background-color:#efb810;
+    color:black;
+    
+
+}

@@ -1,0 +1,114 @@
+<!--Declaracion de tipo de archivo-->
+<!DOCTYPE html>
+<!--Documento Raiz-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Agregar el titulo-->
+    <title> Apps de Gatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googlepis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!--Crear encabezado-->
+    <h1> ¡Hola, mundo!</h1><!--Nivel mas grande de encabezado-->
+    <h2> ¡Hola, mundo!</h2><!--Etiqueta de apertura + contenido + etiqueta de cierre-->
+    <h3> ¡Hola, mundo!</h3>
+    <h4> ¡Hola, mundo!</h4>
+    <h5> ¡Hola, mundo!</h5>
+    <h6> ¡Hola, mundo!</h6>
+    <h1 id="titulo-app-gatos">Apps de gatos</h1>
+    <main>
+        <h3>Imagenes de gatos:</h3>
+        <!--img = image, src = source-->
+    <img src="https://bit.ly/3N6uSMy" alt="gatito negro" class="bordes-redondeados imagen-de-gatos"> <!--Insertar imagen desde internet-->
+    <hr><!--Etiqueta hr= Horizontal-->
+    <h3>Lista de gatos</h3>
+        <div><!--elemento div-->
+        <p1>cosas que los gatos <strong>aman</strong>:</p><!--strong para hacer la letra negrita-->
+            <!--em para hacer la letra cursiva-->
+            <p><em>Lista hecha por Diana Climaco</em></p>
+            <!--Lista no ordenada-->
+            <!--ul= unordered list-->
+            <ul id="lista-gatos-aman">
+                <li>Juguetes</li> <!--li=list item-->
+                <li>Lasagna</li>
+                <li>Plantas</li>
+            </ul>
+            <img src="imagenes/lasagna.jpeg" alt="lasagna" id="imagen-de-lasagna"><!--Imagen desde nuestro dispositivo-->
+        <p>Cosas que los gatos <trong>odian</trong>:</p>
+        <!--Listas ordenadas-->
+        <ol class="lista-de-gatos">
+            <li>Truenos</li>
+            <li><s>Otros gatos</s></li><!--Etiqueta 's' para texto tachado-->
+            <li>Tratamientos antipulgas</li>
+        </ol>
+    </div>
+    <img src="imagenes/gatito.jpeg" alt="gatito" class="imagen-de-gatos"><!--Imagen desde nuestro dispositivo-->
+    <!--Crear enlaces internos -->
+    <a href="#parrafo-1">Parrafo 1</a>
+    <a href="#parrafo-2">Parrafo 2</a>
+    <a href="#parrafo-3">Parrafo 3</a>
+    <a href="#parrafo-4">Parrafo 4</a>
+
+    <h3 id="parrafo-1">Parrafo 1</h3>
+    <p> Un gato será tu amigo, pero nunca tu esclavo.</p>
+    <h3 id="parrafo-2">Parrafo 2</h3>
+    <p> Un gato también puede ser tu mejor amigo.</p>
+    <h3 id="parrafo-3">Parrafo 3</h3>
+    <p> Un gato también puede ser tu mejor amigo.</p>
+    <h3 id="parrafo-4">Parrafo 4</h3>
+    <p> Un gato también puede ser tu mejor amigo.</p>
+    <!--Crear enlaces externos-->
+    <p>En este link <a href="https://bit.ly/3zh6lyu" target="_blank" rel="noopener noreferrer"> puedes ver mas imagenes</a></p>
+<a href="https://ww.hogarmania.com/mascotas/cinco-razones-para-adprtar-gato-negro.html" target="_blank"><img src="https://bit.ly/3N6uSMy" alt="gatito negro" 
+    id="imagen-con-padding"></a> <!--Insertar imagen desde internet-->
+    <img src="imagenes/lasagna.jpeg" alt="lasagna" id="imagen-con-padding">
+    <!--Crear enlaces con #-->
+    <p>Visita nuestro<a href="#" rel="noopener noreferrer"> nuevo sitio we aqui</ahref></p>
+
+        <!--Formulario-->
+        <form action="/enviar-respuesta">
+<!--Texto y boton enviar-->
+<input typte="text" placeholder="URL de la foto d tu gato" required>
+<br>
+<button class=btn type="submit">ENVIAR</button>
+
+            <!--Botones de radio-->
+            <p>¿Tu gato es cachorro o adulto?</p>
+            <label for="cachorro">
+                <input id="cachorro" type="radio" value="cachorro" name="cachorro-adulto" checked>Cachorro
+            </label>
+            <br>
+            <label for="adulto">
+                <input id="adulto" type="radio" value="adulto" name="cachorro-adulto">Adulto
+            </label>
+            <br>
+            <!--Casillas de verificación-->
+            <p>¿Qué tipo de gato es el tuyo?</p>
+            <label for="carinoso">
+                <input id="carinoso" type="checkbox" value="carinoso" name="personalidad" checked> Cariñoso
+            </label>
+            <br>
+            <label for="perezoso">
+                <input id="perezoso" type="checkbox" value="perezoso" name="personalidad"> Perezoso
+            </label>
+            <br>
+            <label for="energico">
+                <input id="energico" type="checkbox" value="energico" name="personalidad"> Enérgico
+            </label>
+            <br>
+        </form>
+    </main>
+ <!--pie de página-->
+ <footer>
+    <!--Etiqueta small para que el pie de página se vea más pequeño-->
+    <p><small>Derechos de autor - <a href="https://tecnolochicas.mx/" target="_blank">tecnolochicas.mx</a></small>
+    </p>
+</footer>
+</body>
+</html>
